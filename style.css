@@ -27,10 +27,45 @@ body, html {
     flex-wrap: wrap;
     text-align: center;
   }
+
+  .parent-container {
+    display: flex; 
+    justify-content: space-between; 
+    padding: 20px;
+  }
+  
+  .left-container {
+    flex: 1; 
+    padding: 20px; 
+    background-color: #11111136
+  }
+
+  .right-container {
+    flex: 1; 
+    padding: 20px; 
+    background-color: #11111136
+  }
+
+  @media (max-width: 768px) { 
+    .parent-container {
+      flex-direction: column; 
+    }
+  
+    .parent-container > *:not(:last-child) {
+      margin-right: 0; 
+      margin-bottom: 20px; 
+    }
+  }
+
+  p {
+    font-size: 15px;
+  }
   
   section {
     flex: 1 100%;
     padding: 20px;
+    font-size: large;
+    letter-spacing: 2px;
   }
   
   @media (max-width: 600px) {
@@ -39,34 +74,9 @@ body, html {
     }
   }
 
-  .code-container {
-    padding: 10px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    overflow-x: auto;
-    background-color: #11111115;
-  }
-  
-  pre {
-    margin: 0;
-    font-family: monospace;
-  }
-  
-  .download-btn {
-    display: inline-block;
-    background-color: #1111119f;
-    color: white;
-    padding: 10px 15px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 16px;
-  }
-
-
-pre[class*="language-"] {
-    background: #11111150 !important; 
-  }
-
-code[class*="language-"] {
-    text-shadow: none !important; 
+  .img-container {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
   }
