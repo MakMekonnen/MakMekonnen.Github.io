@@ -82,13 +82,9 @@ body, html {
     }
   }
 
-  .img-container {
-    max-width: 100px;
-    max-height: 100px;
-    display: block;
+  .image-container, .toggleImage {
+    display: flex;
     margin: 0 auto;
-    border-width: 5px;
-    border-color: #11111136;
   }
 
   .centered-container {
