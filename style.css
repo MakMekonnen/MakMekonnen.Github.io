@@ -43,12 +43,14 @@ body, html {
     flex: 1; 
     padding: 20px; 
     background-color: #11111136;
+    justify-content: center;
   }
 
   .right-container {
     flex: 1; 
     padding: 20px; 
     background-color: #11111136;
+    justify-content: center;
   }
 
   @media (max-width: 700px) { 
@@ -71,6 +73,7 @@ body, html {
     padding: 20px;
     font-size: large;
     letter-spacing: 2px;
+    font-weight: bolder;
   }
   
   @media (max-width: 700px) {
@@ -86,4 +89,18 @@ body, html {
     margin: 0 auto;
     border-width: 5px;
     border-color: #11111136;
+  }
+
+  .centered-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #e4e4e436;
   }
