@@ -44,6 +44,22 @@ main {
   min-width: 300px;
 }
 
+.left-containerT {
+  flex: 1;
+  padding: 20px;
+  background-color: #11111136;
+  min-width: 300px;
+  padding-left: 220px;
+}
+
+.right-containerT {
+  flex: 1;
+  padding: 20px;
+  background-color: #11111136;
+  min-width: 300px;
+  padding-right: 80px;
+}
+
 p {
   font-size: 15px;
 }
@@ -84,6 +100,14 @@ button {
 
   .parent-container > *:not(:last-child) {
     margin-bottom: 20px;
+  }
+
+  .left-containerT {
+    padding-left: 50px;
+  }
+  
+  .right-containerT {
+    padding-right: 10px;
   }
 
   .image-container, #toggleImage {
